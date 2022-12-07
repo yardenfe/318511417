@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="he" xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html">
+<head>
+  <meta charset="UTF-8">
+  <title>find your trip</title>
+    <link rel="stylesheet" href="../static/login.css">
+  <title>signup</title>
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
+  <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+</head>
+<body>
+  <div><a href="login.html">
+  <button class="back"> <i class='fas fa-redo'></i></button></a>
+  </div>
+  <div class="container">
+    <div class="image">
+      <img src="Picture1.png" alt="this picture is not available for now">
+    </div>
+    <div class="text">
+      <div class="header">מצא את הטיול שלך</div><br>
+      <form>
+        <label for="Area">אזור:</label>
+        <select name="Area" id="Area">
+          <option >גליל תחתון</option>
+          <option >גליל עליון</option>
+          <option >ערבה</option>
+          <option >מרכז</option>
+          <option >דרום</option>
+          <option >אילת</option>
+          <option >כנרת</option>
+          <option >גליל</option>
+          <option >בקעת הירדן</option>
+        </select>
+        <br>
+        <br>
+        <label  for="hardness">דרגת קושי:</label>
+          <select name="hardness" id="hardness">
+            <option >קל</option>
+            <option >בינוני</option>
+            <option >קשה</option>
+          </select>
+        <br>
+        <br>
+        מחיר:
+        <label  for="from"> מ</label>
+        <input type="text" id="from" name="from">
+        <label  for="to1">עד</label>
+        <input type="text" id="to1" name="to">
+        <br>
+        <br>
+      אורך:
+        <label  for="Length"> מ</label>
+        <input type="text" id="Length" name="Length">
+        <label  for="to2">עד</label>
+        <input type="text" id="to2" name="to">
+        <br>
+        <br>
+        <label >מסלול מעגלי:</label>
+        <input type="checkbox" checked="circular route">
+        <br>
+        <br>
+        <label >מתאים לעגלות:</label>
+        <input type="checkbox" checked="babys">
+      </form>
+    <br>
+    <div><a href="your_trips.html">
+      <button class="button" >מצא את הטיול הבא שלי</button></a></div>
+    </div>
+  </div>
+</body>
+</html>

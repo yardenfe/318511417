@@ -1,0 +1,257 @@
+body{
+    background-image:url("../static/back.png");
+    background-repeat: no-repeat;
+    width: 100%;
+    background-size: cover;
+    font-family: Gisha;
+}
+
+.normal{
+    font-size:100%;
+    font-weight: normal;
+}
+
+.bold{
+    font-size:100%;
+    font-weight: bold;
+    text-decoration: underline;
+
+}
+
+input[type=header]{
+    background-color: white;
+    background-repeat: no-repeat;
+    width: 600px;
+    height: 30px;
+    position: absolute;
+    border-radius: 15px;
+}
+
+input[type=review]{
+    background-color: white;
+    background-repeat: no-repeat;
+    position: absolute;
+    width: 600px;
+    height: 150px;
+    border-radius: 15px;
+}
+
+input[type=text] {
+    background-color: white;
+    background-position: 10px 10px;
+    background-repeat: no-repeat;
+    border-radius: 15px
+}
+input[type=password] {
+    background-color: white;
+    background-position: 10px 10px;
+    background-repeat: no-repeat;
+    border-radius: 15px
+}
+input[type=email] {
+    background-color: white;
+    background-position: 10px 10px;
+    background-repeat: no-repeat;
+    border-radius: 15px
+}
+
+.line {
+  width: 100%;
+  overflow: hidden;
+  border: none;
+  padding: 0;
+  font-size: 60px;
+}
+
+.flipX {
+  animation: 1s anim-flipX ease infinite;
+    animation-duration: 2s;
+    animation-iteration-count: 2;
+}
+@keyframes anim-flipX {
+  0% {
+    opacity: 0;
+    transform: rotateX(90deg);
+  }
+  50% {
+    opacity: 1;
+    transform: rotateX(720deg);
+  }
+  100% {
+    opacity: 1;
+    transform: rotateX(720deg);
+  }
+}
+
+label{
+    font-weight: bold;
+}
+
+input{
+    width: 250px;
+    height: 30px;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+
+}
+buttom_container{
+  display: flex;
+  align-items: flex-end;
+  flex-direction: row;
+}
+
+select {
+   background-color: white;
+   background-position: 10px 10px;
+   background-repeat: no-repeat;
+   width: 250px;
+   height: 30px;
+}
+
+.button {
+  border: none;
+  width: fit-content;
+  font-size: 30px;
+  cursor: pointer;
+  align-items:center;
+  background-color:darkseagreen;
+  border-radius: 15px;
+  font-family:Gisha;
+}
+
+p{
+    align-items: center;
+    font-size: 40px;
+    background-color: bisque;
+    padding: 20px 20px;
+    text-align: center;
+}
+
+.button:hover{
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.home{
+    align-items: center;
+    font-size: 40px;
+}
+
+.press-here{
+  border: none;
+  text-align: center;
+  font-size: 30px;
+  margin: 4px 2px;
+  text-underline: black;
+  font-weight: bold;
+  background-color: Transparent;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.back {
+  border: none;
+  display: inline-block;
+  font-size: 30px;
+  margin: 4px 2px;
+  cursor: pointer;
+  object-position:top;
+  position: absolute;
+  top: 5px;
+  right: 5px;
+}
+
+.image {
+    max-width: 100%;
+    background-repeat: no-repeat;
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+
+}
+
+.header{
+    font-size: 100px;
+    font-weight: bold;
+
+}
+
+nav {
+    background-color: cornflowerblue;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+    position: relative;
+    height: 40px;
+
+}
+.nav_item{
+  color: black;
+  text-align: center;
+  padding: 7px 7px;
+  text-decoration: none;
+  font-size: 30px;
+  font-weight: bold;
+    display: inline-flex;
+    padding-top: 0px;
+
+}
+
+.text {
+  font-size: 25px;
+  justify-content: center;
+}
+
+form {
+    margin: 0 auto;
+    width: 250px;
+    text-align: start;
+}
+
+label {
+    display: block;
+    font-size: 25px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto;
+  gap: 10px;
+  background-color: green;
+  padding: 10px;
+}
+
+.grid-item {
+  background-color: lightgreen;
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+}
+
+input[type=submit]{
+  border: none;
+  padding: 12px 15px;
+  text-align: center;
+  display: inline-block;
+  font-size: 25px;
+  cursor: pointer;
+  background-color: darkseagreen;
+  font-family:Gisha;
+    height: 50px;
+  width: 100px
+
+}
+
+.heart{
+    font-size:24px;
+     position: absolute;
+  top: 5px;
+  left: 5px;
+}

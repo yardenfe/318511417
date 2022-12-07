@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="he">
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="../static/login.css">
+    <title>signup</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    <script defer src="project.js"></script>
+</head>
+<body>
+
+    <div>
+        <a href="login.html">
+         <button class="back"> <i class='fas fa-redo'></i></button>
+        </a>
+    </div>
+    <div class="container">
+        <div class="image">
+          <img src="../static/picture1.png" alt="this picture is not available for now">
+        </div>
+        <div class="text">
+          <div class="header">הרשמה</div>
+          <br>
+          <form name="new_user" action="/action_page.php" onsubmit="return empty()" method="post">
+            <label for="username">שם משתמש:</label>
+            <input type="text" id="username" name="username"><br>
+            <br>
+            <label  for="password">סיסמא:</label>
+            <input type="password" id="password" name="password"><br>
+            <br>
+            <label  for="email">אימייל:</label>
+            <input type="email" id="email" name="email">
+            <br>
+            <br>
+            <input type="submit" class="button" value="בצע הרשמה">
+          </form>
+        </div>
+    </div>
+</body>
+</html>
