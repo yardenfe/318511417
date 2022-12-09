@@ -6,35 +6,39 @@
     <title>login</title>
 </head>
 <body>
-    <nav>
-        <a class="nav_item" href="about_us.html">קצת עלינו</a> |
+
+     <nav>
+        <a class="nav_item" href="./find_your_trip.html">חיפוש טיול</a> |
+        <a class="nav_item" href="./My_favorite.html">המועדפים שלי</a> |
         <a class="nav_item" href="contact.html">צור קשר</a> |
-    </nav>
+        <a class="nav_item" href="about_us.html">קצת עלינו</a> |
+     </nav>
     <div class="container">
-      <div class="image"><img src="Picture1.png" alt="this picture is not available for now"></div>
-      <div class="text"><br>
-        <div class='line'>
-          <h2 class='flipX'>מצא את הטיול שלי</h2>
+        <div class="text">
+            <div class='line'>
+                <h2 class='flipX'>מצא את הטיול שלי</h2>
+            </div>
+            <div class="logincont">
+                <form name="login" action="/action_page.php" onsubmit="return empty()" method="get">
+                    <label for="username">שם משתמש:</label>
+                    <input type="text" id="username" name="username"><br>
+                    <br>
+                    <label  for="password">סיסמא:</label>
+                    <input type="password" id="password" name="password">
+                    <br><br>
+                </form>
+                <a  href="./find_your_trip.html">
+                    <button class="button" type="submit">התחבר</button>
+                </a>
+                <br>
+                <br>
+                <div class="account">עדיין אין לך משתמש?
+                    <a href="./signup.html">
+                        <button class="press-here">לחץ כאן</button>
+                    </a>
+                </div>
+            </div>
         </div>
-        <form>
-          <label for="username">שם משתמש:</label>
-          <input type="text" id="username" name="username"><br>
-          <br>
-          <label  for="password">סיסמא:</label>
-          <input type="password" id="password" name="password">
-        </form>
-        <br>
-        <a  href="find_your_trip.html">
-            <button class="button" type="submit">התחבר</button>
-        </a>
-        <br><br>
-        עדיין אין לך משתמש?
-        <div>
-           <a href="signup.html">
-                <button class="press-here">לחץ כאן</button>
-            </a>
-        </div>
-      </div>
     </div>
 </body>
 </html>
