@@ -8,23 +8,32 @@
     <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
 </head>
 <body>
-    <button class="back"> <i class='fas fa-redo'></i></button>
+    <nav>
+        <a class="nav_item" href="./find_your_trip.html">חיפוש טיול</a> |
+        <a class="nav_item" href="./My_favorite.html">המועדפים שלי</a> |
+        <a class="nav_item" href="contact.html">צור קשר</a> |
+        <a class="nav_item" href="about_us.html">קצת עלינו</a> |
+    </nav>
+    <a href="request_trip.html">
+            <button class="back"> <i class='fas fa-redo'></i></button></a>
     <div class="container">
       <div class="image">
         <img src="../static/Picture1.png" alt="this picture is not available for now">
       </div>
       <div class="text">
         <div class="header"> הביקורת שלך</div><br>
-        <div class="*********************">
-        <form>
-          <label for="Header">כותרת:</label>
-          <input type="Header" id="Header" name="Header"><br>
-          <br>
-          <label  for="Review">ביקורת:</label>
-          <input type="Review" class="Review" id="Review" name="Review">
-        </form>
+        <div class="yarden">
+            <form>
+                <label for="Header">כותרת:</label>
+                <input type="header" class="header_review" id="Header" name="Header"><br>
+                <br>
+                <label  for="Review">ביקורת:</label>
+                <input type="review" class="comment_review" id="Review" name="Review">
+            </form>
            <br>
-        <br>
+           <br>
+        </div>
+
         <button class="button">פרסם</button>
           </div>
 

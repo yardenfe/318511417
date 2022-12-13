@@ -3,12 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="../static/login.css">
-    <title>find guide</title>
+    <title>register guide</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
 </head>
 <body>
-
      <nav>
         <a class="nav_item" href="./find_your_trip.html">חיפוש טיול</a> |
         <a class="nav_item" href="./My_favorite.html">המועדפים שלי</a> |
@@ -18,31 +17,19 @@
      <a href="request_trip.html">
             <button class="back"> <i class='fas fa-redo'></i></button></a>
     </a>
-    <div class="text">
       <div class="header">הרשמה כמדריך</div><br>
-      <div class="guidecont">
-        <form class="guide_form">
-            <div class="form_item_row">
-                <label for="fullname">שם מלא</label>
+            <form>
+                <label for="fullname">שם מלא*</label>
                 <input type="text" id="fullname" name="fullname">
-            </div>
-            <div class="form_item_row">
-                <label  for="phone">טלפון ליצירת קשר</label>
+                <label  for="phone">טלפון ליצירת קשר*</label>
                 <input type="text" id="phone" name="phone">
-            </div>
-            <div class="form_item_row">
                 <label  for="trining">שנות ניסיון בהדרכת טיולים</label>
                 <input type="text" id="trining" name="trining">
-            </div>
-            <div class="form_item_row">
                 <label  for="price">מחיר לטיול</label>
                 <input type="text" id="price" name="price">
-            </div>
-            <div class="form_item_row">
-                <label  for="about">קצת עליך</label>
-                <input type="text" id="about" name="about">
-            </div>
-        </form>
+                <label  for="about">קצת עליך*</label>
+                <input class="about_you" type="text" id="about" name="about">
+            </form>
         <br>
         <div><a href="your_trips.html">
         <button class="button">הירשם</button></a></div>
