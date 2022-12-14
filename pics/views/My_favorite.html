@@ -12,36 +12,47 @@
 
 </head>
 <body>
-     <nav>
-        <a class="nav_item" href="./find_your_trip.html">חיפוש טיול</a> |
-        <a class="nav_item" href="./My_favorite.html">המועדפים שלי</a> |
-        <a class="nav_item" href="contact.html">צור קשר</a> |
-        <a class="nav_item" href="about_us.html">קצת עלינו</a> |
-     </nav>
-     <br>
-     <br>
-    <a href="find_your_trip.html">
-            <button class="back"> <i class='fas fa-redo'></i></button></a>
-     </a>
-     <div class="header">המועדפים שלך</div>
-    <div class="favorite_container">
-        <ul>
-            <li>
-                <i class="fa-solid fa-person-walking"></i>
-                <p> נחל זוויתן</p>
-            </li>
-            <li>
-                <i class="fa-solid fa-person-walking"></i>
-                <p> נחל משושים</p>
-            </li>
-            <li>
-                <i class="fa-solid fa-person-walking"></i>
-                <p>בריכת הקצינים</p>
-            </li>
-        </ul>
+<nav>
+    <a class="nav_item" href="./find_your_trip.html">חיפוש טיול</a> |
+    <a class="nav_item" href="./My_favorite.html">המועדפים שלי</a> |
+    <a class="nav_item" href="contact.html">צור קשר</a> |
+    <a class="nav_item" href="about_us.html">קצת עלינו</a> |
+</nav>
+<br>
+<br>
 
-    </div>
+    <button class="back" onclick="history.back()"><i class='fas fa-redo'></i></button>
 
+<div class="header">המועדפים שלך</div>
+<div class="favorite_container">
+    <ol class="myUL">
+        <li>
+            <a href="request_trip.html"><i class="fa-solid fa-person-walking"></i><div class="favor_text">נחל זוויתן</div></a>
+        </li>
+        <li>
+            <a href="request_trip.html">
+                <i class="fa-solid fa-person-walking"></i>
+                <div class="favor_text">בריכת משושים</div>
+            </a>
+        </li>
+        <li>
+            <a href="request_trip.html">
+                <i class="fa-solid fa-person-walking"></i>
+                <div class="favor_text">נחל זוויתן</div>
+            </a>
+        </li>
+        <li>
+            <a href="request_trip.html">
+                <i class="fa-solid fa-person-walking"></i>
+                <div class="favor_text">נחל רחף</div>
+            </a>
+        </li>
+    </ol>
 
+</div>
+
+<footer class="footer">
+    <p>Copyright &copy;  2022 Jane Smith. All rights reserved. This material may not be reproduced, distributed, transmitted, cached or otherwise used, except with the prior written permission of the copyright owne </p>
+</footer>
 </body>
 </html>

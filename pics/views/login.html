@@ -5,14 +5,16 @@
     <link rel="stylesheet" href="../static/login.css">
     <title>login</title>
     <script defer src="../static/project.js"></script>
-
+<video id="background-video" autoplay loop muted poster="../static/Forests.jpg">
+<source src="../static/video.mp4" type="video/mp4">
+</video>
 </head>
 <body>
      <nav>
-        <a class="nav_item" href="./find_your_trip.html">חיפוש טיול</a> |
-        <a class="nav_item" href="./My_favorite.html">המועדפים שלי</a> |
-        <a class="nav_item" href="contact.html">צור קשר</a> |
-        <a class="nav_item" href="about_us.html">קצת עלינו</a> |
+        <a class="nav_item" href="./find_your_trip.html" onclick="return false">חיפוש טיול</a> |
+        <a class="nav_item" href="./My_favorite.html" onclick="return false">המועדפים שלי</a> |
+        <a class="nav_item" href="contact.html" >צור קשר</a> |
+        <a class="nav_item" href="about_us.html" >קצת עלינו</a> |
      </nav>
     <div class="container">
         <div class="text">
@@ -20,16 +22,15 @@
                 <h2 class='flipX'>מצא את הטיול שלי</h2>
             </div>
             <div class="logincont">
-                <form name="login" action="/action_page.php" onsubmit="return empty()" method="get">
+                <form name="login" action="./find_your_trip.html" onsubmit="return empty()" method="get">
                     <label for="username" class="text">שם משתמש:</label>
-                    <input type="text" id="username" name="username"><br>
+                    <input type="text" id="username" name="username" required><br>
                     <br>
                     <label  for="password" class="text">סיסמא:</label>
-                    <input type="password" id="password" name="password">
+                    <input type="password" id="password" name="password" required>
                     <br><br>
-                </form>
-                <a  href="./find_your_trip.html">
                     <button class="button" type="submit">התחבר</button>
+                </form>
                 </a>
                 <br>
                 <br>
@@ -41,16 +42,9 @@
             </div>
         </div>
     </div>
-    <div class="slider" id="main-slider">
-        <div class="slider-wrapper">
-            <img src="../static/pic1.png" alt="First" class="slide"/>
-            <img src="../static/pic2.png" alt="Second" class="slide"/>
-            <img src="../static/pic3.png" alt="Third" class="slide"/>
-            <img src="../static/pic4.png" alt="Forth" class="slide"/>
-            <img src="../static/pic5.png" alt="Fifth" class="slide"/>
-            <img src="../static/pic6.png" alt="Sixth" class="slide"/>
-        </div>
-    </div>
+<footer class="footer">
+    <p>Copyright &copy;  2022 Jane Smith. All rights reserved. This material may not be reproduced, distributed, transmitted, cached or otherwise used, except with the prior written permission of the copyright owne </p>
+</footer>
 </body>
 </html>
 

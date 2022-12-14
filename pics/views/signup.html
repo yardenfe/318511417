@@ -11,15 +11,14 @@
 <body>
 
      <nav>
-        <a class="nav_item" href="./find_your_trip.html">חיפוש טיול</a> |
-        <a class="nav_item" href="./My_favorite.html">המועדפים שלי</a> |
-        <a class="nav_item" href="contact.html">צור קשר</a> |
-        <a class="nav_item" href="about_us.html">קצת עלינו</a> |
+      <a class="nav_item" href="./find_your_trip.html" onclick="return false">חיפוש טיול</a> |
+        <a class="nav_item" href="./My_favorite.html" onclick="return false">המועדפים שלי</a> |
+        <a class="nav_item" href="contact.html" >צור קשר</a> |
+        <a class="nav_item" href="about_us.html" >קצת עלינו</a> |
      </nav>
     <div>
-        <a href="login.html">
-         <button class="back"> <i class='fas fa-redo'></i></button>
-        </a>
+
+         <button class="back" onclick="history.back()"> <i class='fas fa-redo'></i></button>
     </div>
     <div class="container">
         <div class="image">
@@ -29,15 +28,15 @@
           <div class="header">הרשמה</div>
           <br>
           <div class="logincont">
-            <form name="new_user" action="/action_page.php" onsubmit="return empty()" method="post">
-                <label class="text" for="username">שם משתמש:</label>
-                <input type="text" id="username" name="username"><br>
+            <form name="new_user" action="./login.html" onsubmit="return empty()" method="post">
+                <label class="text" for="username">שם משתמש*:</label>
+                <input type="text" id="username" name="username" required><br>
                 <br>
-                <label  class="text" for="password">סיסמא:</label>
-                <input type="password" id="password" name="password"><br>
+                <label  class="text" for="password">סיסמא*:</label>
+                <input type="password" id="password" name="password" required><br>
                 <br>
-                <label  class="text" for="email">אימייל:</label>
-                <input type="email" id="email" name="email">
+                <label  class="text" for="email">אימייל*:</label>
+                <input type="email" id="email" name="email" required>
                 <br>
                 <br>
                 <button class="button" type="submit">בצע הרשמה</button>

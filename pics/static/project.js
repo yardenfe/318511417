@@ -96,3 +96,18 @@ function FindTrip() {
 		var slider = new Slideshow( "#main-slider" );
 	});
 })();
+
+function openComment() {
+   commentWindow = window.open("review.html", 'newWindow', 'width=600,height=600') ;
+
+}
+
+function changeHeart(){
+	var image=document.getElementById('heart');
+	if(image.src.match("../static/empty_heart.jpg")){
+		image.src="../static/full_heart.jpg";
+	}
+	else{
+		image.src="../static/empty_heart.jpg";
+	}
+}

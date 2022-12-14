@@ -7,6 +7,8 @@
     <title>signup</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    <script defer src="../static/project.js"></script>
+
 </head>
 <body>
 
@@ -17,39 +19,52 @@
         <a class="nav_item" href="about_us.html">קצת עלינו</a> |
      </nav>
     <div>
-        <a href="your_trips.html">
-            <button class="back"> <i class='fas fa-redo'></i></button></a>
-        </a>
+
+            <button class="back" onclick="history.back()"> <i class='fas fa-redo'></i></button>
     </div>
     <br><br>
-    <button class="heart"><i class="fa fa-heart"></i></button>
+    <button class="heart" onclick="changeHeart()">
+        <img id="heart" src="../static/empty_heart.jpg"/>
+    </button>
         <div class="header">שוויצריה הקטנה:נחלי כלח ונחל גלים</div><br>
         <div class="container"><br>
                 <div class="grid-container-trip">
                     <div class="grid-item1">
                         שוויצריה הקטנה והנחל כלח וגלים הם מהנחלים היפים ביותר בכרמל. מספר מסלולים מציעים לנו את מיטב הכרמל, חורש ים תיכוני ירוק כל השנה, פריחה מרהיבה, מערות גירניות ובעיקר שלווה כמוה יודע רק ההר הירוק תמיד להציע
                     </div>
-                    <div class="grid-item2">
-                        אזור בארץ: חיפה והר הכרמל
-                        <br>
-                        רמת קושי: בינונית
-                        <br>
-                        מסלול מעגלי
-                    </div>
-                    <div class="grid-item3">
-                        אורך: 8 ק"מ
-                        <br>
-                        מחיר : 0
-                        <br>
-                        קישור לאתר: https://www.tiuli.com/tracks/24/%D7%A9%D7%95%D7%95%D7%99%D7%A6%D7%A8%D7%99%D7%94-%D7%94%D7%
-                    </div>
+                        <div class="grid-item2">
+                            אזור בארץ: חיפה והר הכרמל
+                            <br>
+                            רמת קושי: בינונית
+                            <br>
+                            מסלול מעגלי
+                        </div>
+                        <div class="grid-item3">
+                            אורך: 8 ק"מ
+                            <br>
+                            מחיר : 0
+                            <div class="link" >קישור לאתר: https://www.tiuli.com/tracks/24/%D7%A9%D7%95%D7%95%D7%99%D7%A6%D7%A8%D7%99%D7%94-%D7%94%D7%</div>
+                        </div>
                     <div class="grid-item4">חוות דעת ממשתמשי האתר:</div>
                     <div class="grid-item5">
                         <div class="Testimonials">
                             <img src="../static/man.jpeg" alt="Avatar" style="width:90px">
                             <p><span>Natali24</span> מסלול מקסים, נופים מרהיבים !!!</p>
                             <p class="text_in_comment">היינו במסלול ביום ששי האחרון. מסלול מקסים. בהתחלה קצת קוצני ולא מוצל אבל רובו מוצל וקסום בתוך תוואי הנחל, מעט יתדות. ילד בן 7 עשה זאת בהצלחה, השאר היו גדולים יותר.  מומלץ בחום !
-</p>
+                            </p>
+                        </div>
+                        <div class="Testimonials">
+                            <img src="../static/man.jpeg" alt="Avatar" style="width:90px">
+                            <p><span>Natali24</span> מסלול מקסים, נופים מרהיבים !!!</p>
+                            <p class="text_in_comment">היינו במסלול ביום ששי האחרון. מסלול מקסים. בהתחלה קצת קוצני ולא מוצל אבל רובו מוצל וקסום בתוך תוואי הנחל, מעט יתדות. ילד בן 7 עשה זאת בהצלחה, השאר היו גדולים יותר.  מומלץ בחום !
+                            </p>
+                        </div>
+
+                        <div class="Testimonials">
+                            <img src="../static/man.jpeg" alt="Avatar" style="width:90px">
+                            <p><span>Natali24</span> מסלול מקסים, נופים מרהיבים !!!</p>
+                            <p class="text_in_comment">היינו במסלול ביום ששי האחרון. מסלול מקסים. בהתחלה קצת קוצני ולא מוצל אבל רובו מוצל וקסום בתוך תוואי הנחל, מעט יתדות. ילד בן 7 עשה זאת בהצלחה, השאר היו גדולים יותר.  מומלץ בחום !
+                            </p>
                         </div>
                     </div>
                     <div class="grid-item6">
@@ -61,8 +76,8 @@
                         <button class="register_guide">הירשם כמדריך </button></a></div>
                     </div>
                      <div class="grid-item7">
-                       <div><a href="review.html">
-                            <button class="comment">הוסף חוות דעת</button></a>
+                       <div>
+                            <button onclick="openComment()" class="comment">הוסף חוות דעת</button>
                         </div>
 
 

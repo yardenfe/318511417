@@ -6,6 +6,8 @@
     <link rel="stylesheet" href="../static/login.css">
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script defer src="../static/project.js"></script>
 </head>
 <body>
      <nav>
@@ -14,16 +16,18 @@
         <a class="nav_item" href="contact.html">צור קשר</a> |
         <a class="nav_item" href="about_us.html">קצת עלינו</a> |
      </nav>
-    <div><a href="find_your_trip.html">
-        <button class="back"> <i class='fas fa-redo'></i></button></a>
+    <div>
+        <button class="back" onclick="history.back()"> <i class='fas fa-redo'></i></button>
     </div>
-     <br><br>
-  <div class="contact">Phone: 1-800-555-1212</div>
+     <br><br><br><br>
+  <div class="contact">Phone: 1-800-555-1212<i class="fa-solid fa-phone"></i></div>
      <br>
-  <div class="contact">Email: info@tripcompany.com</div>
+  <div class="contact">Email: info@tripcompany.com<i class="fa-solid fa-envelope"></i></div>
      <br>
-  <div class="contact">Address: 123 Main Street, Anytown, USA</div>
+  <div class="contact">Address: 123 Main Street, Anytown, USA<i class="fa-solid fa-location-arrow"></i></div>
      <br>
-  <div class="contact">Website: www.tripcompany.com</div>
+<footer class="footer">
+    <p>Copyright &copy;  2022 Jane Smith. All rights reserved. This material may not be reproduced, distributed, transmitted, cached or otherwise used, except with the prior written permission of the copyright owne </p>
+</footer>
 </body>
 </html>
