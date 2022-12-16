@@ -123,7 +123,6 @@ function randomtrip() {
 }
 
 
-
 function phonenumber(inputtxt)
 {
   var phoneno = /^\d{10}$/;
