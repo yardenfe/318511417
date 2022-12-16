@@ -20,12 +20,13 @@
 
             <button class="back" onclick="history.back()"> <i class='fas fa-redo'></i></button>
       <div class="header">הרשמה כמדריך</div><br>
-            <form action="your_trips.html">
+            <form name="form1" action="your_trips.html" onsubmit="return phonenumber(document.form1.phone)">
                 <div class="register_cont">
                     <label for="fullname">שם מלא*</label>
                     <input title="שדה חובה" type="text" id="fullname" name="fullname" required>
                     <label  for="phone">טלפון ליצירת קשר*</label>
-                    <input  title="שדה חובה"type="text" id="phone" name="phone" required>
+                    <input id="phone" type="tel" name="phone" required>
+<!--                    <input  title="שדה חובה"type="text" id="phone" name="phone" required>-->
                     <label for="area_guide">אזור הדרכה עיקרי*</label>
                     <select name="area_guide" id="area_guide" required>
                         <option value="" disabled selected value> -- select an option --</option>
@@ -42,7 +43,7 @@
                     <input type="text" id="price" name="price">
                     <label  for="about">קצת עליך*</label>
                     <textarea id="about" name="about" class="userInput" required></textarea>
-                    <button class="button_guide">הירשם</button></a></div>
+                    <input type="submit" class="button_guide" value="הירשם"/></div>
                 </div>
             </form>
 <br>

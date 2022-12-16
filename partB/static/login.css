@@ -77,6 +77,12 @@ input[type=text] {
     background-repeat: no-repeat;
     border-radius: 15px
 }
+input[type=tel] {
+    background-color: white;
+    /*background-position: 10px 10px;*/
+    background-repeat: no-repeat;
+    border-radius: 15px
+}
 
 input[type=number] {
     background-color: white;
@@ -84,7 +90,9 @@ input[type=number] {
     background-repeat: no-repeat;
     border-radius: 15px
 }
-
+.userInput{
+    border-radius: 15px;
+}
 input[type=password] {
     background-color: white;
     background-position: 10px 10px;

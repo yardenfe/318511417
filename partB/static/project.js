@@ -121,3 +121,18 @@ function randomtrip() {
     var randomTrip = trip[Math.floor(Math.random() * trip.length)];
     document.getElementById('randomTrip').value = randomTrip;
 }
+
+
+
+function phonenumber(inputtxt)
+{
+  var phoneno = /^\d{10}$/;
+  if(inputtxt.value.match(phoneno)){
+      return true;
+        }
+      else
+        {
+        alert("your phone number is not valid");
+        return false;
+        }
+}
