@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="he">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../static/login.css">
+    <title>login</title>
+    <script defer src="../static/project.js"></script>
+    <video id="background-video" autoplay loop muted poster="../static/Forests.jpg">
+        <source src="../static/video.mp4" type="video/mp4">
+    </video>
+</head>
+<body>
+<nav>
+    <a class="nav_item" href="./find_your_trip.html" onclick="return false">חיפוש טיול</a> |
+    <a class="nav_item" href="./My_favorite.html" onclick="return false">המועדפים שלי</a> |
+    <a class="nav_item" href="contact.html">צור קשר</a> |
+    <a class="nav_item" href="about_us.html">קצת עלינו</a> |
+    <a class="nav_item" href="login.html">התחברות לאתר</a> |
+</nav>
+<div class="container">
+    <div class="text">
+        <div class='line'>
+            <h2 class='flipX'>מצא את הטיול שלי</h2>
+        </div>
+        <div class="logincont">
+            <form name="login" action="./find_your_trip.html" onsubmit="return empty()" method="get">
+                <label for="username" class="text">שם משתמש:</label>
+                <input type="text" id="username" name="username" required><br>
+                <br>
+                <label for="password" class="text">סיסמא:</label>
+                <input type="password" id="password" name="password" required>
+                <br><br>
+                <button class="button" type="submit">התחבר</button>
+            </form>
+            </a>
+            <br>
+            <br>
+            <div class="account">עדיין אין לך משתמש?
+                <a href="./signup.html">
+                    <button class="press-here">לחץ כאן</button>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+<footer class="footer">
+    <p>Copyright &copy; 2022 Jane Smith. All rights reserved. This material may not be reproduced, distributed,
+        transmitted, cached or otherwise used, except with the prior written permission of the copyright owne </p>
+</footer>
+</body>
+</html>
+

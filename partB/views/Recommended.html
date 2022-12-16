@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="he">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="x-ua-compatible" content="IE=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <title>recommended</title>
+    <link rel="stylesheet" href="../static/login.css">
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    <script defet src="../static/project.js"></script>
+</head>
+<body>
+<div class="body_rec">
+    <nav>
+        <a class="nav_item" href="./find_your_trip.html">חיפוש טיול</a> |
+        <a class="nav_item" href="./My_favorite.html">המועדפים שלי</a> |
+        <a class="nav_item" href="contact.html">צור קשר</a> |
+        <a class="nav_item" href="about_us.html">קצת עלינו</a> |
+        <a class="nav_item" href="login.html">התחברות לאתר</a> |
+
+    </nav>
+    <br>
+    <div class="header">המלצות האתר</div>
+    <form>
+        <label class="text" for="recommend_trip">סוג פעילות מועדפת</label>
+        <br>
+        <select name="recommend_trip" id="recommend_trip">
+            <option>טיולי מים לקטנטנים בצפון</option>
+            <option>פעילויות לקבוצות גדולות</option>
+            <option>פעילויות לזוגות</option>
+            <option>אטרקציות</option>
+            <option>חניוני לילה בצפון</option>
+            <option>חניוני לילה בדרום</option>
+        </select>
+        <input class="rec_button1" type="button" name="answer" value="המלץ לי על פעילות" onclick="showDiv()"/>
+    </form>
+    <br><br>
+    <div id="recommend_result" style="display:none;" class="answer_list">
+        <input class="rec_input" value="טיול זריחה במצדה" name="randomSong" id="randomTrip">
+        <button class="else" type="randomtrip" onclick="randomtrip()">אני רוצה משהו אחר</button>
+    </div>
+</div>
+</body>
+</html>

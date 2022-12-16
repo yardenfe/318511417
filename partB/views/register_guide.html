@@ -14,6 +14,8 @@
         <a class="nav_item" href="./My_favorite.html">המועדפים שלי</a> |
         <a class="nav_item" href="contact.html">צור קשר</a> |
         <a class="nav_item" href="about_us.html">קצת עלינו</a> |
+         <a class="nav_item" href="login.html" >התחברות לאתר</a> |
+
      </nav>
 
             <button class="back" onclick="history.back()"> <i class='fas fa-redo'></i></button>
@@ -24,17 +26,26 @@
                     <input title="שדה חובה" type="text" id="fullname" name="fullname" required>
                     <label  for="phone">טלפון ליצירת קשר*</label>
                     <input  title="שדה חובה"type="text" id="phone" name="phone" required>
+                    <label for="area_guide">אזור הדרכה עיקרי*</label>
+                    <select name="area_guide" id="area_guide" required>
+                        <option value="" disabled selected value> -- select an option --</option>
+                        <option>גליל עליון</option>
+                        <option>גליל תחתון</option>
+                        <option>ערבה</option>
+                        <option>חיפה והר הכרמל</option>
+                        <option>מרכז הארץ</option>
+                        <option>כנרת</option>
+                    </select>
                     <label  for="trining">שנות ניסיון בהדרכת טיולים</label>
                     <input type="text" id="trining" name="trining">
                     <label  for="price">מחיר לטיול</label>
                     <input type="text" id="price" name="price">
                     <label  for="about">קצת עליך*</label>
-                    <input  title="שדה חובה"class="about_you" type="text" id="about" name="about" required>
+                    <textarea id="about" name="about" class="userInput" required></textarea>
                     <button class="button_guide">הירשם</button></a></div>
                 </div>
             </form>
 <br>
-
       </div>
     </div>
 </body>

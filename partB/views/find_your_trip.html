@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="he" xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>find your trip</title>
+    <link rel="stylesheet" href="../static/login.css">
+    <title>signup</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    <script defer src="../static/project.js"></script>
+</head>
+<body>
+<nav>
+    <a class="nav_item" href="./find_your_trip.html">חיפוש טיול</a> |
+    <a class="nav_item" href="./My_favorite.html">המועדפים שלי</a> |
+    <a class="nav_item" href="contact.html">צור קשר</a> |
+    <a class="nav_item" href="about_us.html">קצת עלינו</a> |
+    <a class="nav_item" href="login.html">התחברות לאתר</a> |
+
+</nav>
+
+<button class="back" onclick="history.back()"><i class='fas fa-redo'></i></button>
+
+<div class="container">
+    <div class="image">
+        <img src="../static/picture1.png" alt="this picture is not available for now">
+    </div>
+    <div class="text">
+        <div class="header">מצא את הטיול שלך</div>
+        <br>
+        <div class="logincont">
+            <form action="your_trips.html">
+                <label class="text" for="Area">אזור*:</label>
+                <select class="trip_select" name="Area" id="Area" required>
+                    <option value="" disabled selected value> -- select an option --</option>
+                    <option>גליל תחתון</option>
+                    <option>גליל עליון</option>
+                    <option>ערבה</option>
+                    <option>מרכז</option>
+                    <option>דרום</option>
+                    <option>אילת</option>
+                    <option>כנרת</option>
+                    <option>גליל</option>
+                    <option>בקעת הירדן</option>
+                </select>
+                <br>
+                <br>
+                <label class="text" for="hardness">דרגת קושי:</label>
+                <select class="trip_select" name="hardness" id="hardness">
+                    <option value="" disabled selected value> -- select an option --</option>
+                    <option>קל</option>
+                    <option>בינוני</option>
+                    <option>קשה</option>
+                </select>
+                <br>
+                <br>
+                <div class="text">מחיר:</div>
+                <label class="text" for="from">החל מ</label>
+                <input type="number" id="from" name="from">
+                <label class="text" for="to1">עד</label>
+                <input type="number" id="to1" name="to">
+                <br>
+                <br>
+                <div class="text">אורך:</div>
+                <label class="text" for="Length">החל מ</label>
+                <input type="number" id="Length" name="Length">
+                <label class="text" for="to2">עד</label>
+                <input type="number" id="to2" name="to">
+                <br>
+                <br>
+                <label class="text">מסלול מעגלי:</label>
+                <input type="checkbox" checked="circular route">
+                <br>
+                <br>
+                <label class="text">מתאים לעגלות:</label>
+                <input type="checkbox" checked="babys">
+                <br>
+                <button class="button" type="submit">מצא את הטיול הבא שלי</button>
+            </form>
+            <br>
+
+        </div>
+    </div>
+</div>
+<a href="Recommended.html">
+    <button class="rec_button">הצע לי פעילויות לפי נושא</button>
+</a>
+<footer class="footer">
+    <p>Copyright &copy; 2022 Jane Smith. All rights reserved. This material may not be reproduced, distributed,
+        transmitted, cached or otherwise used, except with the prior written permission of the copyright owne </p>
+</footer>
+</body>
+</html>
