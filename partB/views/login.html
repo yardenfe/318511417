@@ -2,12 +2,13 @@
 <html dir="rtl" lang="he">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="../static/login.css">
+    <link rel="stylesheet" href="../static/css/login.css">
     <title>login</title>
-    <script defer src="../static/project.js"></script>
-    <video id="background-video" autoplay loop muted poster="../static/Forests.jpg">
-        <source src="../static/video.mp4" type="video/mp4">
+    <script defer src="../static/javascript/project.js"></script>
+    <video id="background-video" autoplay loop muted poster="../static/pictures/Forests.jpg">
+        <source src="../static/pictures/video.mp4" type="video/mp4">
     </video>
+      video #{video}
 </head>
 <body>
 <nav>
@@ -24,11 +25,11 @@
         </div>
         <div class="logincont">
             <form name="login" action="./find_your_trip.html" onsubmit="return empty()" method="get">
-                <label for="username" class="text">שם משתמש:</label>
-                <input type="text" id="username" name="username" required><br>
+                <label for="username_login" class="text">שם משתמש:</label>
+                <input type="text" id="username_login" name="username_login" required><br>
                 <br>
-                <label for="password" class="text">סיסמא:</label>
-                <input type="password" id="password" name="password" required>
+                <label for="password_login" class="text">סיסמא:</label>
+                <input type="password" id="password_login" name="password_login" required>
                 <br><br>
                 <button class="button" type="submit">התחבר</button>
             </form>

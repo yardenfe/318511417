@@ -2,11 +2,11 @@
 <html dir="rtl" lang="he">
 <head>
     <meta charset="utf-8">
-    <link rel="stylesheet" href="../static/login.css">
+    <link rel="stylesheet" href="../static/css/login.css">
     <title>signup</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
-    <script defer src="../static/project.js"></script>
+    <script defer src="../static/javascript/project.js"></script>
 </head>
 <body>
 
@@ -30,15 +30,15 @@
         <div class="header">הרשמה</div>
         <br>
         <div class="logincont">
-            <form name="new_user" action="./login.html" onsubmit="return empty()" method="post">
-                <label class="text" for="username">שם משתמש*:</label>
-                <input type="text" id="username" name="username" required><br>
+            <form name="new_user" action="/insertUserIntoDB" onsubmit="return empty()" method="post">
+                <label class="text" for="username_signup">שם משתמש*:</label>
+                <input type="text" id="username_signup" name="username_signup" required><br>
                 <br>
-                <label class="text" for="password">סיסמא*:</label>
-                <input type="password" id="password" name="password" required><br>
+                <label class="text" for="password_signup">סיסמא*:</label>
+                <input type="password" id="password_signup" name="password_signup" required><br>
                 <br>
-                <label class="text" for="email">אימייל*:</label>
-                <input type="email" id="email" name="email" required>
+                <label class="text" for="email_signup">אימייל*:</label>
+                <input type="email" id="email_signup" name="email_signup" required>
                 <br>
                 <br>
                 <button class="button" type="submit">בצע הרשמה</button>
