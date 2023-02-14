@@ -4,7 +4,7 @@ const path = require('path');
 const BodyParser = require('body-parser');
 const sql = require('./db/db');
 const CRUD = require('./db/CRUD');
-const port = 8080;
+const port = 3000;
 const CreateDB = require('./db/CreateDB');
 var cookieParser = require('cookie-parser');
 
@@ -247,7 +247,7 @@ res.render(path.join(__dirname,'views/find_your_trip'));
 });
 
 app.listen(port, () => {
-        console.log('Example app listening at http://localhost8080')
+        console.log('Example app listening at http://localhost3000')
     }
 );
 
