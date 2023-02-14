@@ -1,0 +1,17 @@
+extends BasicLayout
+block content
+    .container
+      .text
+        .header  הביקורת שלך
+        br
+        div(class="review_cont")
+          form(action="/addReview/", method="post")
+            label(for="Header") כותרת:
+            input#Header(type="header", class="header_review", name="Header")
+            br
+            br
+            label(for="Review") ביקורת:
+            input#Review(type="review", class="comment_review", name="Review")
+            br
+            br
+            button.button(type="submit") פרסם

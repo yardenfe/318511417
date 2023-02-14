@@ -1,0 +1,34 @@
+doctype html
+html(dir='rtl', lang='he')
+head
+  meta(charset="UTF-8")
+  meta(http-equiv="x-ua-compatible", content="IE=edge")
+  link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css")
+  link(rel="stylesheet", href="../css/login.css")
+  meta(name="viewport", content="width=device-width, initial-scale=1")
+  script(src="https://kit.fontawesome.com/a076d05399.js", crossorigin="anonymous")
+  script(defer, src="../javascript/project.js")
+  block head
+nav
+  a.nav_item(href='/find_your_trip') &#x5D7;&#x5D9;&#x5E4;&#x5D5;&#x5E9; &#x5D8;&#x5D9;&#x5D5;&#x5DC;
+  |  |
+  a.nav_item(href='/Favorite' ) &#x5D4;&#x5DE;&#x5D5;&#x5E2;&#x5D3;&#x5E4;&#x5D9;&#x5DD; &#x5E9;&#x5DC;&#x5D9;
+  |  |
+  a.nav_item(href='/contact') &#x5E6;&#x5D5;&#x5E8; &#x5E7;&#x5E9;&#x5E8;
+  |  |
+  a.nav_item(href='/about_us') &#x5E7;&#x5E6;&#x5EA; &#x5E2;&#x5DC;&#x5D9;&#x5E0;&#x5D5;
+  |  |
+  a.nav_item(href='/home') &#x5D4;&#x5EA;&#x5D7;&#x5D1;&#x5E8;&#x5D5;&#x5EA; &#x5DC;&#x5D0;&#x5EA;&#x5E8;
+  |  |
+  a.nav_item(href='/updateDetails') עדכון פרטי משתמש
+  |  |
+  block add
+
+button.back(onclick='history.back()')
+  i.fas.fa-redo
+
+block content
+footer.footer
+        p
+            | Copyright &copy; 2022 Jane Smith. All rights reserved. This material may not be reproduced, distributed,
+            | transmitted, cached or otherwise used, except with the prior written permission of the copyright owne

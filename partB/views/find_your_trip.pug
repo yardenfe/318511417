@@ -1,0 +1,47 @@
+extends BasicLayout
+block content
+    .container
+      .image
+        img(src="../pictures/picture1.png", alt="this picture is not available for now")
+      .text
+        .header מצא את הטיול שלך
+        br
+        .logincont
+          form(action="/findTrip")
+            label.text(for="Area") אזור*:
+            select#Area(class="trip_select", name="Area", required)
+              option(value="", disabled, selected)  -- select an option --
+              option גליל תחתון
+              option גליל עליון
+              option ערבה
+              option מרכז
+              option כנרת
+              option רמת הגולן
+            br
+            br
+            label.text(for="hardness") דרגת קושי:
+            select#hardness(class="trip_select", name="hardness")
+              option(value="1", disabled, selected)  -- select an option --
+              option קל
+              option בינוני
+              option קשה
+            br
+            br
+            .text מחיר:
+            label.text(for="price_from") החל מ
+            input#price_from(type="number" name="price_from")
+            label.text(for="price_to") עד
+            input#price_to(type="number", name="price_to")
+            br
+            br
+            .text אורך:
+            label.text(for="Length_from") החל מ
+            input#Length_from(type="number", name="Length_from")
+            label.text(for="Length_to") עד
+            input#Length_to(type="number", name="Length_to")
+            br
+            br
+            button.button(type="submit") מצא את הטיול הבא שלי
+          br
+    a(href="/Recommended")
+      button(class="rec_button") הצע לי פעילויות לפי נושא

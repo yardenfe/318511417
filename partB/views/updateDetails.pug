@@ -1,0 +1,19 @@
+extends BasicLayout
+block content
+    .container
+        .image
+            img(src="../pictures/picture1.png", alt="this picture is not available for now")
+        .text
+            .header עדכון פרטי משתמש
+            br
+            .logincont
+                form(name="update", action="/updateUserDetails", method="post")
+                    label.text(for="pasword_update")  עדכון סיסמא :
+                    input(type="password", id="pasword_update", name="pasword_update" optional)
+                    br
+                    br
+                    label.text(for="email_update") עדכון אימייל:
+                    input(type="email", id="email_update", name="email_update" optional)
+                    br
+                    br
+                    button.button(type="submit") בצע עידכון

@@ -1,0 +1,19 @@
+extends BasicLayout
+block content
+    div(class="body_rec")
+      .header המלצות האתר
+      form
+        label.text(for="recommend_trip") סוג פעילות מועדפת
+        br
+        select(name="recommend_trip", id="recommend_trip")
+          option(value="", disabled, selected,required)  -- select an option --
+          option טיולי מים לקטנטנים בצפון
+          option פעילויות לקבוצות גדולות
+          option פעילויות לזוגות
+          option חניוני לילה בצפון
+        input(class="rec_button1", type="button", name="answer", value="המלץ לי על פעילות", onclick="showDiv()")
+      br
+      br
+      div(id="recommend_result", style="display:none;", class="answer_list")
+        input#randomTrip(class="rec_input", value="לחץ להצעות", name="randomSong")
+        button.else(type="randomtrip", onclick="randomtrip()") אני רוצה משהו אחר

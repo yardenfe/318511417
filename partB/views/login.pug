@@ -1,0 +1,26 @@
+extends BasicLayout
+block head
+  video#background-video(autoplay, loop, muted, poster="pictures/Forests.jpg")
+    source(src="pictures/video.mp4", type="video/mp4")
+block content
+    .container
+      .text
+        .line
+          h2.flipX מצא את הטיול שלי
+        .logincont
+          form(name="login", action="/CheckLogin", onsubmit="return empty()", method="post")
+            label.text(for="username_login") שם משתמש:
+            input(type="text", id="username_login", name="username_login", required)
+            br
+            br
+            label.text(for="password_login") סיסמא:
+            input(type="password", id="password_login", name="password_login", required)
+            br
+            br
+            button.button(type="submit") התחבר
+          br
+          br
+          .account
+            |עדיין אין לך משתמש?
+            a(href="/sign_up")
+              button.press-here לחץ כאן

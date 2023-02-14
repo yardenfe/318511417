@@ -1,0 +1,14 @@
+extends BasicLayout
+block content
+    .header המועדפים שלך
+    div(class="favorite_container")
+        if favoriteList.length > 0
+            ol.myUL
+            each favorite in favoriteList
+              li
+                a(href="/request_trip/" + favorite.trip_name)
+                  i.fa-solid.fa-person-walking
+                  div(class="favor_text") #{favorite.trip_name}
+        else
+            h1 עדיין לא הוספת טיולים למועדפים
+

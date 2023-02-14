@@ -1,0 +1,27 @@
+extends BasicLayout
+block content
+    .header הרשמה כמדריך
+    br
+    form(name="form1", action="/registerguide", onsubmit="return phonenumber(document.form1.phone)" method="post")
+      div(class="register_cont")
+        label(for="fullname") שם מלא*
+        input#fullname(title="שדה חובה", type="text", name="fullname", required)
+        label(for="phone") טלפון ליצירת קשר*
+        input#phone(type="tel", name="phone", required)
+        label(for="area_guide") אזור הדרכה עיקרי*
+        select(name="area_guide", id="area_guide", required)
+          option(value="", disabled, selected)  -- select an option --
+          option גליל עליון
+          option גליל תחתון
+          option ערבה
+          option חיפה והר הכרמל
+          option מרכז הארץ
+          option כנרת
+        label(for="trining") שנות ניסיון בהדרכת טיולים*
+        input#trining(type="number", name="trining", requierd)
+        label(for="price") מחיר לטיול*
+        input#price(type="number", name="price",required)
+        label(for="about") קצת עליך*
+        textarea#about.userInput(name="about", required)
+        input(type="submit", class="button_guide", value="הירשם")
+    br

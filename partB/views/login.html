@@ -2,21 +2,20 @@
 <html dir="rtl" lang="he">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="../static/css/login.css">
+    <link rel="stylesheet" href="css/login.css">
     <title>login</title>
-    <script defer src="../static/javascript/project.js"></script>
-    <video id="background-video" autoplay loop muted poster="../static/pictures/Forests.jpg">
-        <source src="../static/pictures/video.mp4" type="video/mp4">
+    <script defer src="javascript/project.js"></script>
+    <video id="background-video" autoplay loop muted poster="pictures/Forests.jpg">
+        <source src="pictures/video.mp4" type="video/mp4">
     </video>
-      video #{video}
 </head>
 <body>
 <nav>
-    <a class="nav_item" href="./find_your_trip.html" onclick="return false">חיפוש טיול</a> |
-    <a class="nav_item" href="./My_favorite.html" onclick="return false">המועדפים שלי</a> |
-    <a class="nav_item" href="contact.html">צור קשר</a> |
-    <a class="nav_item" href="about_us.html">קצת עלינו</a> |
-    <a class="nav_item" href="login.html">התחברות לאתר</a> |
+    <a class="nav_item" href="/FindTrip" onclick="return false">חיפוש טיול</a> |
+    <a class="nav_item" href="/Favorite" onclick="return false">המועדפים שלי</a> |
+    <a class="nav_item" href="/contact">צור קשר</a> |
+    <a class="nav_item" href="/about_us">קצת עלינו</a> |
+    <a class="nav_item" href="/home">התחברות לאתר</a> |
 </nav>
 <div class="container">
     <div class="text">
@@ -24,7 +23,7 @@
             <h2 class='flipX'>מצא את הטיול שלי</h2>
         </div>
         <div class="logincont">
-            <form name="login" action="./find_your_trip.html" onsubmit="return empty()" method="get">
+            <form name="login" action="/CheckLogin" onsubmit="return empty()" method="get">
                 <label for="username_login" class="text">שם משתמש:</label>
                 <input type="text" id="username_login" name="username_login" required><br>
                 <br>
@@ -37,7 +36,7 @@
             <br>
             <br>
             <div class="account">עדיין אין לך משתמש?
-                <a href="./signup.html">
+                <a href="/SignUp">
                     <button class="press-here">לחץ כאן</button>
                 </a>
             </div>

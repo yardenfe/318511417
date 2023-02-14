@@ -97,29 +97,36 @@ function FindTrip() {
     });
 })();
 
-function openComment() {
-    commentWindow = window.open("review.html", 'newWindow', 'width=600,height=600');
+function checklogin(){
 
-}
-
-function changeHeart() {
-    var image = document.getElementById('heart');
-    if (image.src.match("../static/empty_heart.jpg")) {
-        image.src = "../static/full_heart.jpg";
-    } else {
-        image.src = "../static/empty_heart.jpg";
-    }
 }
 
 function showDiv() {
     document.getElementById('recommend_result').style.display = "block";
 }
 
-var trip = Array("טיול טרקטורונים", "קיר טיפוס", "שייט קיאקים", "שייט בסירת פדלים", "צניחה חופשית", "פיינטבול");
-
 function randomtrip() {
-    var randomTrip = trip[Math.floor(Math.random() * trip.length)];
-    document.getElementById('randomTrip').value = randomTrip;
+    var chosentype=document.getElementById('recommend_trip').value;
+    var childtrip = Array("עין נון- מעיין שכשוך בכנרת", "ג'ימבורי", "משחקייה", "שייט בסירת פדלים", "ספרייה");
+    var biggroup=Array("קיאקים בצפון","סדנת בישול","ארוחת ערב במסעדה","טיול רגלי במצדה","מסלול הליכה בצפון")
+    var coupletrip=Array("בר יין בוטיק","טיול הליכה בשקיעה","צפייה משותפת בטלוויזיה","באולינג","מסעדה רומנטית בשקיעה","טיול זריחה במצדה")
+    var sleepatnotrh=Array("חניון עין חרוד עמק המעיינות","לינה בחניוני הכנרת","חניון לילה נחל האסי","חניון לילה קריית שמונה")
+    if (chosentype=='טיולי מים לקטנטנים בצפון'){
+         var randomTrip = childtrip[Math.floor(Math.random() * childtrip.length)];
+        document.getElementById('randomTrip').value = randomTrip;
+    }
+    if (chosentype=='פעילויות לקבוצות גדולות'){
+        var randomTrip = biggroup[Math.floor(Math.random() * biggroup.length)];
+        document.getElementById('randomTrip').value = randomTrip;
+        }
+    if (chosentype=='פעילויות לזוגות'){
+        var randomTrip = coupletrip[Math.floor(Math.random() * coupletrip.length)];
+        document.getElementById('randomTrip').value = randomTrip;
+        }
+    if (chosentype=='חניוני לילה בצפון'){
+        var randomTrip = sleepatnotrh[Math.floor(Math.random() * sleepatnotrh.length)];
+        document.getElementById('randomTrip').value = randomTrip;
+}
 }
 
 
@@ -135,3 +142,6 @@ function phonenumber(inputtxt)
         return false;
         }
 }
+
+
+

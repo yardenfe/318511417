@@ -1,0 +1,23 @@
+
+Requirements – 
+Express, MySql2,path,BodyParser,cookieParser,pug,Csvtojson
+
+route– 
+-/CreateTable
+–/InsertData
+–ShowTables /
+- /DropTable
+
+Create table- 
+"CREATE TABLE users (username VARCHAR(255) NOT NULL PRIMARY KEY,password VARCHAR(255) NOT NULL,email VARCHAR(255) NOT NULL UNIQUE)";
+"CREATE TABLE trip (trip_name VARCHAR(255) NOT NULL PRIMARY KEY, introduction VARCHAR(1000) NOT NULL, area ENUM('מרכז','גליל עליון','גליל תחתון','כנרת','ערבה','רמת הגולן') NOT NULL, difficult ENUM('קל','קשה','בינוני') NOT NULL, trip_length FLOAT NOT NULL, price FLOAT NOT NULL, link VARCHAR(255) NOT NULL)";
+"CREATE TABLE favorite (username VARCHAR(255) NOT NULL,trip_name VARCHAR(255) NOT NULL,PRIMARY KEY (username, trip_name),FOREIGN KEY (username) REFERENCES users(username),FOREIGN KEY (trip_name) REFERENCES trip(trip_name))";
+"CREATE TABLE guide (phone VARCHAR(20) NOT NULL PRIMARY KEY, GuideName VARCHAR(255) NOT NULL, area ENUM('מרכז','גליל עליון','גליל תחתון','כנרת','ערבה','רמת הגולן') NOT NULL, Seniority int NOT NULL, trip_price FLOAT NOT NULL, about_you TEXT NOT NULL)";
+"CREATE TABLE review (username VARCHAR(255) NOT NULL,trip_name VARCHAR(255) NOT NULL, review_date DATETIME NOT NULL, header VARCHAR(255) NOT NULL, review TEXT NOT NULL, PRIMARY KEY (username, trip_name, review_date), FOREIGN KEY (username) REFERENCES users(username), FOREIGN KEY (trip_name) REFERENCES trip(trip_name))";
+
+להעתיק
+מה נשאר - 
+לשלוח הודועות חיווי 
+משפטי סלקט 
+
+נתיבים - 

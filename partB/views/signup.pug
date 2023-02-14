@@ -1,0 +1,23 @@
+extends BasicLayout
+block content
+    .container
+      .image
+        img(src="../pictures/picture1.png", alt="this picture is not available for now")
+      .text
+        .header הרשמה
+        br
+        .logincont
+          form(name="new_user", action="/insertUserIntoDB", onsubmit="return empty()", method="post")
+            label.text(for="username_signup") שם משתמש*:
+            input(type="text", id="username_signup", name="username_signup", required)
+            br
+            br
+            label.text(for="password_signup") סיסמא*:
+            input(type="password", id="password_signup", name="password_signup", required)
+            br
+            br
+            label.text(for="email_signup") אימייל*:
+            input(type="email", id="email_signup", name="email_signup", required)
+            br
+            br
+            button.button(type="submit") בצע הרשמה

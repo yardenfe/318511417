@@ -1,0 +1,20 @@
+extends BasicLayout
+block content
+    .container
+      br
+      .text
+        br
+        .header הטיולים שלך
+        br
+        if tripResult.length>0
+          .grid-container-trips
+            ol.myUL
+              br
+              each n in tripResult
+                li(class="list_item")
+                  a(href="/request_trip/" + n.trip_name)
+                    #{n.trip_name}
+
+                br
+        else
+          h1 לא נמצאו טיולים תואמים להגדרות החיפוש שלך

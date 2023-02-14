@@ -1,0 +1,52 @@
+extends BasicLayout
+block add
+  a(href="/addToFavorite/")
+    button.add הוסף למועדפים
+  a(href="/deleteFromFavorite/")
+    button.add הסר מהמועדפים
+block content
+    .header #{chosen_trip.trip_name}
+    br
+    .container
+      br
+      .grid-container-trip
+        .grid-item1
+          #{chosen_trip.introduction}
+        .grid-item2
+          | אזור בארץ: #{chosen_trip.area}
+          br
+          | רמת קושי: #{chosen_trip.difficult}
+          br
+          | מסלול מעגלי
+        .grid-item3
+          | אורך: #{chosen_trip.length}
+          br
+          | מחיר : #{chosen_trip.price}
+          .link
+            a(href=chosen_trip.link)
+              | קישור
+              | לאתר
+        .grid-item4 חוות דעת ממשתמשי האתר:
+        .grid-item5
+          each review in tripReview
+            .Testimonials
+              img(src="../pictures/man.jpeg", alt="Avatar", style="width:90px")
+              p
+                span #{review.username}
+                span #{review.review_date}
+                | #{review.header}
+                p(class="text_in_comment")
+                 | #{review.review}
+
+        .grid-item6
+          div
+            a(href="/find_guide")
+              button(class="find_guide") מצא לי מדריך למסלול
+          br
+          div
+            a(href="/register_guide")
+              button(class="register_guide") הירשם כמדריך
+        .grid-item7
+          div
+            a(href="/review/" + chosen_trip.trip_name)
+              button.comment הוסף חוות דעת
